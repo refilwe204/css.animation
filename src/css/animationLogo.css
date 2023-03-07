@@ -1,0 +1,23 @@
+*{
+    position: fixed;
+    top:-100%; right:-100%; left:-100%; bottom:-100%;
+    margin: auto;
+    width: 160px;
+    height: 160px;
+}
+
+@keyframes animatedLogo{
+    0%  {background-color: rgb(128, 0, 0);}
+    25% {background-color: rgb(87, 240, 130);
+         border-radius: 100%;}
+    50% {background-color: rgb(233, 203, 55);}
+    100%{background-color: rgb(88, 67, 245);
+         transform: rotate(360deg);}
+}
+
+div:hover{
+    align-items: center;
+    animation-name: animatedLogo;
+    animation-duration: 4s;
+    animation-iteration-count:infinite;
+}
